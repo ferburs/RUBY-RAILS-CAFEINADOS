@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pelicula: one
+  sala: one
+  fecha: 2022-06-03 17:47:22
+  precio: 1
+
+two:
+  pelicula: two
+  sala: two
+  fecha: 2022-06-03 17:47:22
+  precio: 1

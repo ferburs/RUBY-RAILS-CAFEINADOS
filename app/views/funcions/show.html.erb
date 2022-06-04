@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @funcion %>
+
+<div>
+  <%= link_to "Edit this funcion", edit_funcion_path(@funcion) %> |
+  <%= link_to "Back to funcions", funcions_path %>
+
+  <%= button_to "Destroy this funcion", @funcion, method: :delete %>
+</div>

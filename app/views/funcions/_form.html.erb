@@ -1,0 +1,37 @@
+<%= form_with(model: funcion) do |form| %>
+  <% if funcion.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(funcion.errors.count, "error") %> prohibited this funcion from being saved:</h2>
+
+      <ul>
+        <% funcion.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :pelicula_id, style: "display: block" %>
+    <%= form.text_field :pelicula_id %>
+  </div>
+
+  <div>
+    <%= form.label :sala_id, style: "display: block" %>
+    <%= form.text_field :sala_id %>
+  </div>
+
+  <div>
+    <%= form.label :fecha, style: "display: block" %>
+    <%= form.datetime_field :fecha %>
+  </div>
+
+  <div>
+    <%= form.label :precio, style: "display: block" %>
+    <%= form.number_field :precio %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
