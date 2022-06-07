@@ -44,7 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_04_202652) do
     t.string "last_name"
     t.string "birthdate"
     t.string "phone"
-    t.string "adress"
+    t.string "address"
     t.string "country"
     t.string "city"
     t.string "zip"

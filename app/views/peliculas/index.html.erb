@@ -3,7 +3,24 @@
  <% if user_signed_in? %>
   <h1> Hola <%= current_user.email %> </h1>
 <%end%>
-<h1>Peliculas</h1>
+
+
+
+
+<div id="pelicula" class="container clear bg-white relative">
+  <h2 class="ch-billaboard-title">Cartelera</h2>
+    <div class="ch-billaboard-grid-item">
+      <div class="ch-billaboard-movie" style="height: auto;">
+        <figure>
+          <img data-src= "https://th.bing.com/th/id/OIP.eg3qMnutyrLr0YVEPcC_BAHaD4?pid=ImgDet&rs=1"
+          alt = "DR STRANGE" width = "158" height = "238" src = "https://th.bing.com/th/id/OIP.eg3qMnutyrLr0YVEPcC_BAHaD4?pid=ImgDet&rs=1"></img>
+          <figcaption>
+          <span> DR STRANGE</span>
+          </figcaption>
+          </figure>
+      </div>
+    </div>
+</div>
 
 <div id="peliculas">
   <% @peliculas.each do |pelicula| %>
