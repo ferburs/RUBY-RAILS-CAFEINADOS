@@ -14,6 +14,27 @@
  *= require_self
  */
 
+.small-container{
+    width:100%;
+    max-width:650px;
+}
+.large-container{
+width:100%;
+max-width:960px;
+}
+.center-block{
+margin:0 auto;
+}
+.padding{
+padding:10px 15px;
+}
+.margin-top {
+    margin-top: 1.5em;
+}
+
+body{
+}
+
 header .logo {
     font-size: 30px;
     font-weight: bold;
@@ -21,7 +42,6 @@ header .logo {
     align-items: center;
     gap: 10px;
 }
-
 
 header li {
     padding: 5px 10px;
@@ -79,3 +99,11 @@ header {
 .source-code-container img {
     width: 17px;
   }
+
+.cartelera{
+
+}
+
+.pelicula{
+
+}

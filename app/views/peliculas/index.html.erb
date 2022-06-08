@@ -4,31 +4,25 @@
   <h1> Hola <%= current_user.email %> </h1>
 <%end%>
 
-
-
-
-<div id="pelicula" class="container clear bg-white relative">
-  <h2 class="ch-billaboard-title">Cartelera</h2>
-    <div class="ch-billaboard-grid-item">
-      <div class="ch-billaboard-movie" style="height: auto;">
+<div class="container left bg-white">
+  <h2>Cartelera</h2>
+  <div class="row row-cols-6">
+    <% @peliculas.each do |pelicula| %>
+      <div class="col">
         <figure>
-          <img data-src= "https://th.bing.com/th/id/OIP.eg3qMnutyrLr0YVEPcC_BAHaD4?pid=ImgDet&rs=1"
-          alt = "DR STRANGE" width = "158" height = "238" src = "https://th.bing.com/th/id/OIP.eg3qMnutyrLr0YVEPcC_BAHaD4?pid=ImgDet&rs=1"></img>
+          <%= link_to image_tag(url_for(pelicula.imagen)), pelicula, title: pelicula.titulo %>
           <figcaption>
-          <span> DR STRANGE</span>
+            <span> <%= link_to pelicula.titulo, pelicula %> </span>
           </figcaption>
-          </figure>
-      </div>
+        </figure>
     </div>
+    <% end %>
+  </div>
 </div>
 
-<div id="peliculas">
-  <% @peliculas.each do |pelicula| %>
-    <%= render pelicula %>
-    <p>
-      <%= link_to "Show this pelicula", pelicula %>
-    </p>
+<% if user_signed_in? %>
+  <% @user = current_user%>
+  <% if @user.admin? %>
+    <%= link_to "New pelicula", new_pelicula_path %>
   <% end %>
-</div>
-
-<%= link_to "New pelicula", new_pelicula_path %>
+<% end %>

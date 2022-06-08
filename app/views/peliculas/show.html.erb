@@ -3,8 +3,16 @@
 <%= render @pelicula %>
 
 <div>
-  <%= link_to "Edit this pelicula", edit_pelicula_path(@pelicula) %> |
-  <%= link_to "Back to peliculas", peliculas_path %>
+  <% if user_signed_in? %>
+    <% @user = current_user%>
+    <% if @user.admin? %>
+      <%= link_to "Edit this pelicula", edit_pelicula_path(@pelicula) %> |
+      <%= link_to "Back to peliculas", peliculas_path %>
 
-  <%= button_to "Destroy this pelicula", @pelicula, method: :delete %>
+      <%= button_to "Destroy this pelicula", @pelicula, method: :delete %>
+    <%else %>
+      <%= button_to "Adquirir entradas", new_entrada_path(@pelicula)%>
+    <% end %>
+  <% end %>
+
 </div>
