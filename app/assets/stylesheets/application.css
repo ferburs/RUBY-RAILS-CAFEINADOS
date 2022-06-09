@@ -19,14 +19,17 @@
     max-width:650px;
 }
 .large-container{
-width:100%;
-max-width:960px;
+    width:100%;
+    max-width:960px;
 }
 .center-block{
-margin:0 auto;
+    margin:0 auto;
 }
 .padding{
-padding:10px 15px;
+    padding:10px 15px;
+}
+.marg{
+    margin: 15px;
 }
 .margin-top {
     margin-top: 1.5em;
@@ -100,10 +103,14 @@ header {
     width: 17px;
   }
 
+.ch-billaboard-grid-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
 .cartelera{
-
 }
 
-.pelicula{
-
+.contenedor-pelicula{
+    display: inline-block;
 }

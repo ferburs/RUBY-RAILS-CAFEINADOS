@@ -1,5 +1,7 @@
 class PeliculasController < ApplicationController
   before_action :set_pelicula, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
+
   # GET /peliculas or /peliculas.json
   def index
     @peliculas = Pelicula.all
@@ -55,6 +57,8 @@ class PeliculasController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
 
   private
 

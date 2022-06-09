@@ -1,6 +1,25 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @pelicula %>
+<div class="container mt-5">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-3">
+        <figure class = "padding">
+          <%=  image_tag(url_for(@pelicula.imagen))  %>
+        </figure>
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3"><% @pelicula.titulo%></h2>
+        <p> <%= @pelicula.descripcion%></p>
+        <div>
+          <a href = "https://www.youtube.com/watch?v=cFHjZfy50Kk" > VER TRAILER</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <div>
   <% if user_signed_in? %>
@@ -8,10 +27,7 @@
     <% if @user.admin? %>
       <%= link_to "Edit this pelicula", edit_pelicula_path(@pelicula) %> |
       <%= link_to "Back to peliculas", peliculas_path %>
-
       <%= button_to "Destroy this pelicula", @pelicula, method: :delete %>
-    <%else %>
-      <%= button_to "Adquirir entradas", new_entrada_path(@pelicula)%>
     <% end %>
   <% end %>
 

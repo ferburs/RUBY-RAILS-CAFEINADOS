@@ -54,3 +54,24 @@
 
 </div>
 <% end %>
+
+
+</div>
+<div class="container left bg-white">
+  <div class = "row row-cols-2">
+    <div class = "col">
+      <figure>
+        <%=  image_tag(url_for(@pelicula.imagen))  %>
+      </figure>
+
+
+    </div>
+    <div class = "row-cols-3">
+      <h2> <%= @pelicula.titulo%> </h2>
+      <h4> <%= @pelicula.descripcion%> </h4>
+      <a href = "https://www.youtube.com/watch?v=cFHjZfy50Kk" > VER TRAILER</a>
+    </div>
+  </div>
+</div>
+
+<!-- <%= render @pelicula %> -->

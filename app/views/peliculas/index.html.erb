@@ -8,7 +8,7 @@
   <h2>Cartelera</h2>
   <div class="row row-cols-6">
     <% @peliculas.each do |pelicula| %>
-      <div class="col">
+      <div class="col padding marg">
         <figure>
           <%= link_to image_tag(url_for(pelicula.imagen)), pelicula, title: pelicula.titulo %>
           <figcaption>

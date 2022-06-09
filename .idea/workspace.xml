@@ -5,24 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aeb89602-a8ea-48b0-8ec7-9c457ed0087c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup" beforeDir="false" afterPath="$PROJECT_DIR$/backup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ERB File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/fer_m/OneDrive/Desktop",
+    "last_opened_file_path": "C:/Users/fer_m/OneDrive/Desktop/RUBY-RAILS-CAFEINADOS/app/assets/stylesheets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +51,11 @@
     "ruby.rails.projectView.checked": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fer_m\OneDrive\Desktop\RUBY-RAILS-CAFEINADOS\app\assets\stylesheets" />
+    </key>
+  </component>
   <component name="RunManager" selected="Rails.Development: RUBY-RAILS-CAFEINADOS">
     <configuration name="Development: RUBY-RAILS-CAFEINADOS" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="RUBY-RAILS-CAFEINADOS" />
@@ -146,7 +152,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654696581314</updated>
-      <workItem from="1654696587826" duration="16073000" />
+      <workItem from="1654696587826" duration="16526000" />
+      <workItem from="1654784916866" duration="13137000" />
     </task>
     <servers />
   </component>
