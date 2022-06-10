@@ -5,6 +5,10 @@
     </li>
 
     <% if user_signed_in? %>
+
+        <li class = "nav-item">
+          <%= link_to "Perfil", edit_profile_path() , class: "nav-link" %>
+        </li>
         <li class = "nav-item">
             <%= link_to "Cerrar sesion", destroy_user_session_path, class: "nav-link" %>
         </li>

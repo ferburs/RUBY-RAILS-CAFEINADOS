@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aeb89602-a8ea-48b0-8ec7-9c457ed0087c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backup" beforeDir="false" afterPath="$PROJECT_DIR$/backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/profiles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/_nav.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_nav.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,21 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/fer_m/OneDrive/Desktop/RUBY-RAILS-CAFEINADOS/app/assets/stylesheets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ruby.rails.projectView.checked": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fer_m/OneDrive/Desktop/RUBY-RAILS-CAFEINADOS/app/assets/stylesheets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\fer_m\OneDrive\Desktop\RUBY-RAILS-CAFEINADOS\app\assets\stylesheets" />
@@ -154,10 +153,22 @@
       <updated>1654696581314</updated>
       <workItem from="1654696587826" duration="16526000" />
       <workItem from="1654784916866" duration="13137000" />
+      <workItem from="1654866360747" duration="2846000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
