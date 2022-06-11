@@ -13,6 +13,13 @@
         <p> <%= @pelicula.descripcion%></p>
         <div>
           <a href = "https://www.youtube.com/watch?v=cFHjZfy50Kk" > VER TRAILER</a>
+          <strong>Funciones:</strong>
+
+          <%=  @pelicula.funcions.map do |item|%>
+            <%= item.fecha%>
+            <%= item.sala.nombre %>
+            <%= link_to "seleccionar función",item %>
+          <% end %>
         </div>
       </div>
     </div>

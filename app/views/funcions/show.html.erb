@@ -7,4 +7,7 @@
   <%= link_to "Back to funcions", funcions_path %>
 
   <%= button_to "Destroy this funcion", @funcion, method: :delete %>
+  <% @user = current_user%>
+  <td><%= button_to 'Comprar ticket' ,{:controller => 'tickets', :action => 'create', :user_id => current_user.id, :funcion_id => @funcion.id}, {:method => :post} %></td>
+
 </div>
