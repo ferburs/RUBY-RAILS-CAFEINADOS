@@ -45,8 +45,9 @@
         <%  @pelicula.funcions.map do |item|%>
           <%= item.fecha%>
           <%= item.sala.nombre %>
-          <%= button_to "Seleccionar función",item %>
-        <% end %>
+          <%= button_to 'Seleccionar función', funcion_path(item), method: :get %>
+
+      <% end %>
       </div>
 
     </div>
