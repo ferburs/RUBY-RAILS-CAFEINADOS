@@ -16,6 +16,8 @@ class PeliculasController < ApplicationController
     @pelicula = Pelicula.new
   end
 
+  def buy
+  end
   # GET /peliculas/1/edit
   def edit
   end
@@ -57,6 +59,7 @@ class PeliculasController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 
 
 

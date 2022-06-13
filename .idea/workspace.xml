@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aeb89602-a8ea-48b0-8ec7-9c457ed0087c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/376d00f3-0ca2-4d47-ab40-7404a15d02e6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/profiles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/entradas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/entradas_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/partials/_nav.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_nav.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/peliculas/buy.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/fer_m/OneDrive/Desktop/RUBY-RAILS-CAFEINADOS/app/assets/stylesheets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fer_m/OneDrive/Desktop/RUBY-RAILS-CAFEINADOS/db/development.sqlite3&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -154,6 +162,7 @@
       <workItem from="1654696587826" duration="16526000" />
       <workItem from="1654784916866" duration="13137000" />
       <workItem from="1654866360747" duration="2846000" />
+      <workItem from="1655129804005" duration="51000" />
     </task>
     <servers />
   </component>

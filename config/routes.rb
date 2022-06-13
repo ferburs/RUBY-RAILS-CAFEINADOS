@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   end
   #get 'users/sign_out' => 'sessions#destroy', :as => :destroy_user_session
 
+  post "peliculas/:id/buy", to: "peliculas#buy", as: :buy
+  #post "pelicula/:id/buy", to: "peliculas#buy"
+
   root 'peliculas#index'
 
   resources :entradas

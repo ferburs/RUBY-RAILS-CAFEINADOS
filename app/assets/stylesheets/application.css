@@ -29,7 +29,10 @@
     padding:10px 15px;
 }
 .marg{
-    margin: 15px;
+    margin: 10px 15px;
+}
+.bord{
+    border: 15px;
 }
 .margin-top {
     margin-top: 1.5em;
@@ -113,4 +116,15 @@ header {
 
 .contenedor-pelicula{
     display: inline-block;
+}
+
+.pelicula-link{
+    text-decoration: none;
+}
+.pelicula-link:hover {
+    text-shadow: 0px 0px 5px #2326c5;
+}
+
+.seat-single {
+    padding: 0 1px 3px;
 }

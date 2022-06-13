@@ -19,6 +19,7 @@ class EntradasController < ApplicationController
   def edit
   end
 
+
   # POST /entradas or /entradas.json
   def create
     @entrada = Entrada.new(entrada_params)

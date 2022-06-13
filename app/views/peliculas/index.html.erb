@@ -11,9 +11,7 @@
       <div class="col padding marg">
         <figure>
           <%= link_to image_tag(url_for(pelicula.imagen)), pelicula, title: pelicula.titulo %>
-          <figcaption>
-            <span> <%= link_to pelicula.titulo, pelicula %> </span>
-          </figcaption>
+          <h6 class = "pelicula-link"> <%= link_to pelicula.titulo, pelicula %> </h6>
         </figure>
     </div>
     <% end %>
