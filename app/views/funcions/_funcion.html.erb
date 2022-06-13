@@ -1,12 +1,12 @@
 <div id="<%= dom_id funcion %>">
   <p>
     <strong>Pelicula:</strong>
-    <%= funcion.pelicula_id %>
+    <%= funcion.pelicula.titulo %>
   </p>
 
   <p>
     <strong>Sala:</strong>
-    <%= funcion.sala_id %>
+    <%= funcion.sala.nombre %>
   </p>
 
   <p>
@@ -18,5 +18,8 @@
     <strong>Precio:</strong>
     <%= funcion.precio %>
   </p>
+  <figure class = "padding">
+    <%=  image_tag(url_for(funcion.pelicula.imagen))  %>
+  </figure>
 
 </div>
