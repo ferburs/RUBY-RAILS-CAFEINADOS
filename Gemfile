@@ -17,6 +17,9 @@ gem "puma", "~> 5.0"
 
 gem "bootstrap", "~> 4.3.1"
 
+gem 'simple_form'
+
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 

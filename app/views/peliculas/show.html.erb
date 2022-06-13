@@ -1,5 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
+
 <div class="container mt-5">
   <div class="card">
     <div class="row">
@@ -13,18 +14,45 @@
         <p> <%= @pelicula.descripcion%></p>
         <div>
           <a href = "https://www.youtube.com/watch?v=cFHjZfy50Kk" > VER TRAILER</a>
-          <strong>Funciones:</strong>
 
-          <%=  @pelicula.funcions.map do |item|%>
-            <%= item.fecha%>
-            <%= item.sala.nombre %>
-            <%= link_to "seleccionar función",item %>
-          <% end %>
         </div>
+
+
+
+
+      <div class="container">
+        <label class="label"><strong>Seleccione una función </strong></label>
+
+        <%=select(:pelicula, :id,Funcion.all.collect { |p| [ p.fecha, p.id ] }) %>
+
+
+
+
       </div>
     </div>
   </div>
 </div>
+
+
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="row">
+      <div class = "col-md-10">
+        <strong>Funciones  </strong>
+        <br>
+
+        <%  @pelicula.funcions.map do |item|%>
+          <%= item.fecha%>
+          <%= item.sala.nombre %>
+          <%= button_to "Seleccionar función",item %>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
 
