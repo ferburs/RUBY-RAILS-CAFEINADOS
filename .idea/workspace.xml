@@ -7,8 +7,8 @@
     <list default="true" id="aeb89602-a8ea-48b0-8ec7-9c457ed0087c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/funcions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/funcions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tickets/_ticket.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tickets/_ticket.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +325,7 @@
       <workItem from="1654866360747" duration="2846000" />
       <workItem from="1654960067558" duration="5811000" />
       <workItem from="1655068272358" duration="10302000" />
-      <workItem from="1655126334473" duration="6730000" />
+      <workItem from="1655126334473" duration="9787000" />
     </task>
     <servers />
   </component>

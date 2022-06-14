@@ -66,6 +66,6 @@ class FuncionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def funcion_params
-      params.require(funcion).permit(:pelicula_id, :sala_id, :fecha, :precio)
+      params.require(:funcion).permit(:pelicula_id, :sala_id, :fecha, :precio)
     end
 end
