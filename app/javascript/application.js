@@ -4,3 +4,9 @@
 
 import 'bootstrap'
 import 'css/styles'
+
+function fecha() {
+    var date;
+    date = new Date().toLocaleDateString();
+    return date
+}

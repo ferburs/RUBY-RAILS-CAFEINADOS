@@ -1,11 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
- <% if user_signed_in? %>
-  <h1> Hola <%= current_user.email %> </h1>
-<%end%>
-
 <div class="container left bg-white">
-  <h2>Cartelera</h2>
+  <h2 class = "padding" >Cartelera</h2>
   <div class="row row-cols-6">
     <% @peliculas.each do |pelicula| %>
       <div class="col padding marg">
@@ -19,6 +15,7 @@
     <% end %>
   </div>
 </div>
+
 
 <% if user_signed_in? %>
   <% @user = current_user%>
