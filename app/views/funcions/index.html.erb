@@ -1,14 +1,32 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Funcions</h1>
+<div class = "container center-block">
+<h1 class = "padding merg">Funciones</h1>
+<div class = "container left bg-white">
 
-<div id="funcions">
-  <% @funcions.each do |funcion| %>
-    <%= render funcion %>
-    <p>
-      <%= link_to "Show this funcion", funcion %>
-    </p>
-  <% end %>
-</div>
+  <div class="row row-cols-1 row-cols-md-5 g-4">
+    <% @funcions.each do |funcion| %>
+        <div class="col">
+          <div class="card" style="max-width: 15rem">
+            <img src= <%= funcion.pelicula.imagen %> class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%= funcion.pelicula.titulo %></h5>
+              <p class="card-text">
+                <span> <strong> <%=funcion.sala.nombre %> </strong> </span> <br>
+              <span> <strong> Precio: <%=funcion.precio %> </strong></span> <br>
+              <span><strong> <%=funcion.fecha %></span></strong> <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      <!--<%= render funcion %>-->
+      <!-- <p>-->
+       <!-- <%= link_to "Show this funcion", funcion %>-->
+      <!--</p>--><% end %>
+
+  </div>
 
 <%= link_to "New funcion", new_funcion_path %>
+
+</div>
+</div>

@@ -1,10 +1,14 @@
 <nav class= "nav bg-light">
 
-    <li class= "nav-item">
+    <li class= "link">
     <%= link_to "Inicio", root_path, class: "nav-link" %>
     </li>
 
     <% if user_signed_in? %>
+
+        <li class = "nav-item">
+          <%= link_to "Perfil", edit_profile_path(current_user) , class: "nav-link" %>
+        </li>
         <li class = "nav-item">
             <%= link_to "Cerrar sesion", destroy_user_session_path, class: "nav-link" %>
         </li>

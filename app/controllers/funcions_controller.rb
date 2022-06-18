@@ -38,7 +38,8 @@ class FuncionsController < ApplicationController
   def update
     respond_to do |format|
       if @funcion.update(funcion_params)
-        format.html { redirect_to funcion_url(@funcion), notice: "Funcion was successfully updated." }
+        format.html { redirect_to funcion_url(@funcion)}
+        #format.html { redirect_to funcion_url(@funcion), notice: "Funcion was successfully updated." }
         format.json { render :show, status: :ok, location: @funcion }
       else
         format.html { render :edit, status: :unprocessable_entity }

@@ -1,10 +1,113 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @pelicula %>
 
-<div>
-  <%= link_to "Edit this pelicula", edit_pelicula_path(@pelicula) %> |
-  <%= link_to "Back to peliculas", peliculas_path %>
+<div class="container mt-5">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-3 ">
+        <figure class = "padding">
+          <%=  image_tag(url_for(@pelicula.imagen))  %>
+        </figure>
+      </div>
+      <div class="col-md-8">
 
-  <%= button_to "Destroy this pelicula", @pelicula, method: :delete %>
+        <h2 class="card-title mt-3"><%= @pelicula.titulo%></h2>
+        <p> <%= @pelicula.descripcion%></p>
+
+        <h6> <span> Genero: modificar bd</span> </h6>
+        <h6> <span> Duracion: modificar bd </span> </h6>
+        <h6> <span> Actores: modificar bd</span> </h6>
+        <h6> <span> Director: <%= @pelicula.director %></span> </h6>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="card">
+    <div class = "container">
+      <p align="center">
+      <iframe width="560" height="315" src=<%=@pelicula.linktrailer%>>
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="row">
+      <div class = "col-md-10">
+        <strong>Funciones  </strong>
+        <br>
+        <%  @pelicula.funcions.map do |item|%>
+          <%= item.fecha%>
+          <%= item.sala.nombre %>
+          <%= button_to 'Seleccionar función', funcion_path(item), method: :get %>
+
+      <% end %>
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+  <br>
+</div>
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="row">
+      <div class = "col-md-10">
+        <strong>Funciones  </strong>
+        <input type = "date" value = "2022-06-16"/>
+        <br>
+        <ul class="col-sm-8 items-wrap">
+          <li class="time-select__item" data-time="13:45">13:45</li>
+          <%  @pelicula.funcions.map do |item|%>
+            <% if item.fecha ===  "2022-06-14 16:45:00 UTC"%>
+              <%= item.fecha%>
+              <%= item.sala.nombre %>
+              <%= button_to 'Seleccionar función', funcion_path(item), method: :get %>
+            <% end %>
+
+            <li class="time-select__item" data-time="13:45">13:45</li>
+            </ul>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="row">
+      <div>
+        <% if user_signed_in? %>
+          <% @user = current_user%>
+          <% if @user.admin? %>
+            <br>
+            <div class="btn-group" role="group" >
+
+              <%= link_to "Edit this pelicula", edit_pelicula_path(@pelicula) %>
+              &nbsp &nbsp
+              <%= link_to "Back to peliculas", peliculas_path %>
+              &nbsp &nbsp
+              <%= button_to "Destroy this pelicula", @pelicula, method: :delete, class: "btn btn-danger " %>
+              &nbsp &nbsp
+            </div>
+
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>

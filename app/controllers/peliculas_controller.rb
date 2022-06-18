@@ -1,5 +1,7 @@
 class PeliculasController < ApplicationController
   before_action :set_pelicula, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
+
   # GET /peliculas or /peliculas.json
   def index
     @peliculas = Pelicula.all
@@ -56,6 +58,11 @@ class PeliculasController < ApplicationController
     end
   end
 
+
+
+  private
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_pelicula
@@ -64,6 +71,6 @@ class PeliculasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pelicula_params
-      params.require(:pelicula).permit(:titulo, :descripcion, :director)
+      params.require(:pelicula).permit(:titulo, :descripcion, :director,:imagen, :linktrailer)
     end
 end

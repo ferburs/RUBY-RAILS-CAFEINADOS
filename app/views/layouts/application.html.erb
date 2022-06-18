@@ -6,7 +6,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application",media: 'all', "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
@@ -17,7 +17,29 @@
     <% if alert %>
       <p class = "alert alert-danger"><%=alert %></p>
     <%end%>
+
+
+    <header>
+    <%= link_to root_path,:class=>"name" do%>
+        <div class="logo padding">
+          <%= image_tag "cineonrails.jpg"%>
+
+          <div>CAFEINADOS</div>
+        </div> 
+    <%end%>
+
     <%= render "partials/nav" %>
+    
+    </header>
+
+
+    <%= link_to "https://github.com/ferburs/RUBY-RAILS-CAFEINADOS" do%>
+    <div class="source-code-container">
+      <%= image_tag "githublogo.png"%>
+      <div> Source Code </div>
+    </div>
+    <%end%>
+
     <%= yield %>
   </body>
 </html>

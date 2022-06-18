@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :tickets
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
@@ -10,6 +13,7 @@ Rails.application.routes.draw do
   resources :funcions
   resources :salas
   resources :peliculas
+  resources :profiles, only: [:show, :edit, :update]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

@@ -1,0 +1,31 @@
+<div id="<%= dom_id ticket %>">
+
+  <p>
+    <strong>Pelicula:</strong>
+    <%= ticket.funcion.pelicula.titulo %>
+  </p>
+
+  <p>
+    <strong>Horario:</strong>
+    <%= ticket.funcion.fecha %>
+  </p>
+
+  <p>
+    <strong>Sala:</strong>
+    <%= ticket.funcion.sala.nombre %>
+  </p>
+
+  <p>
+    <strong>Usuario:</strong>
+    <%= ticket.user.email %>
+  </p>
+
+  <p>
+    <strong>Precio:</strong>
+    <%= ticket.funcion.precio %>
+  </p>
+  <figure class = "padding">
+    <%=  image_tag(url_for(ticket.funcion.pelicula.imagen))  %>
+  </figure>
+
+</div>

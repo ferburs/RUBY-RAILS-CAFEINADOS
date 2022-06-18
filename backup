@@ -1,0 +1,77 @@
+
+<!-
+<div id="pelicula" class="container clear bg-white relative">
+  <div class="ch-billaboard clear">
+  <h2 class="ch-billaboard-title">Cartelera</h2>
+    <div class="ch-billaboard-grid-item">
+      <div class="ch-billaboard-movie" style="height: auto;">
+        <figure>
+          <img data-src= "https://th.bing.com/th/id/OIP.eg3qMnutyrLr0YVEPcC_BAHaD4?pid=ImgDet&rs=1"
+          alt = "DR STRANGE" width = "158" height = "238" src = "https://th.bing.com/th/id/OIP.eg3qMnutyrLr0YVEPcC_BAHaD4?pid=ImgDet&rs=1"></img>
+          <figcaption>
+          <span> DR STRANGE</span>
+          </figcaption>
+          </figure>
+      </div>
+    </div>
+</div>
+</div>
+-->
+
+
+<div class="container">
+  <div class="row row-cols-4">
+    <h2>Cartelera</h2>
+    <% @peliculas.each do |pelicula| %>
+      <div class="col">
+    <% end %>
+
+    </div>
+</div>
+
+<div class = "container bg-black relative">
+  <h2>cartelera</h2>
+  <% @peliculas.each do |pelicula|%>
+  <div class = "pelicula">
+    <figure>
+      <img data-src= "https://th.bing.com/th/id/OIP.eg3qMnutyrLr0YVEPcC_BAHaD4?pid=ImgDet&rs=1"
+           alt = "DR STRANGE" width = "158" height = "238" src = "https://th.bing.com/th/id/OIP.eg3qMnutyrLr0YVEPcC_BAHaD4?pid=ImgDet&rs=1"></img>
+      <figcaption>
+        <span> <%= link_to pelicula.titulo, pelicula %> </span>
+      </figcaption>
+    </figure>
+  </div>
+  <% end %>
+</div>
+
+
+<div id="peliculas">
+  <% @peliculas.each do |pelicula| %>
+    <%= render pelicula %>
+    <p>
+      <%= link_to "Show this pelicula", pelicula %>
+    </p>
+
+</div>
+<% end %>
+
+
+</div>
+<div class="container left bg-white">
+  <div class = "row row-cols-2">
+    <div class = "col">
+      <figure>
+        <%=  image_tag(url_for(@pelicula.imagen))  %>
+      </figure>
+
+
+    </div>
+    <div class = "row-cols-3">
+      <h2> <%= @pelicula.titulo%> </h2>
+      <h4> <%= @pelicula.descripcion%> </h4>
+      <a href = "https://www.youtube.com/watch?v=cFHjZfy50Kk" > VER TRAILER</a>
+    </div>
+  </div>
+</div>
+
+<!-- <%= render @pelicula %> -->
