@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9b7b6201-c3c6-42d1-8087-bf9616316f65" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/peliculas/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,7 @@
       <updated>1655219685604</updated>
       <workItem from="1655219688930" duration="1064000" />
       <workItem from="1655220829266" duration="30527000" />
-      <workItem from="1655417906910" duration="2508000" />
+      <workItem from="1655417906910" duration="5921000" />
     </task>
     <servers />
   </component>
