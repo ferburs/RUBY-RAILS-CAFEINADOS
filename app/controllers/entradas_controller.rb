@@ -8,6 +8,7 @@ class EntradasController < ApplicationController
 
   # GET /entradas/1 or /entradas/1.json
   def show
+    @ticket = Ticket.new
   end
 
   # GET /entradas/new

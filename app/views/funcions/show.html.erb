@@ -5,7 +5,23 @@
 <div>
   <% if user_signed_in? %>
     <% @user = current_user%>
-    <td><%= button_to 'Comprar ticket' ,{:controller => 'tickets', :action => 'create', :user_id => current_user.id, :funcion_id => @funcion.id}, {:method => :post} %></td>
+
+
+
+
+
+    <%= form_with(model: @ticket, local: true) do |form| %>
+      <%= form.hidden_field :user_id, value: current_user.id%>
+      <%= form.hidden_field :funcion_id, value: @funcion.id%>
+      <%= form.label :"Seleccione la cantidad de entradas", style: "display: block" %>
+      <%= form.number_field :cantidad, value:1,min:1, step:1%>
+      <div class="actions">
+        <%= form.submit "Comprar entradas" %>
+      </div>
+
+<%end%>
+
+
     <% if @user.admin? %>
   <%= link_to "Edit this funcion", edit_funcion_path(@funcion) %> |
   <%= link_to "Back to funcions", funcions_path %>
