@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b7b6201-c3c6-42d1-8087-bf9616316f65" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fer_m.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/17fc1b5d-98e7-4b7f-a67a-f4246f411242.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/17fc1b5d-98e7-4b7f-a67a-f4246f411242.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/peliculas/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ticket" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,25 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/fer_m/OneDrive/Desktop/RUBY-RAILS-CAFEINADOS/db&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/fer_m/OneDrive/Desktop/RUBY-RAILS-CAFEINADOS/db",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\fer_m\OneDrive\Desktop\RUBY-RAILS-CAFEINADOS\db" />
@@ -154,6 +171,7 @@
       <workItem from="1655219688930" duration="1064000" />
       <workItem from="1655220829266" duration="30527000" />
       <workItem from="1655417906910" duration="5921000" />
+      <workItem from="1656271357009" duration="21302000" />
     </task>
     <servers />
   </component>
@@ -165,7 +183,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/visualFunciones" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -11,6 +11,9 @@ class PeliculasController < ApplicationController
   def show
   end
 
+  def all
+    return Pelicula.all
+  end
   # GET /peliculas/new
   def new
     @pelicula = Pelicula.new
@@ -71,6 +74,6 @@ class PeliculasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pelicula_params
-      params.require(:pelicula).permit(:titulo, :descripcion, :director,:imagen, :linktrailer)
+      params.require(:pelicula).permit(:titulo, :descripcion, :director,:imagen, :linktrailer,:duracion,:actores,:genero)
     end
 end
