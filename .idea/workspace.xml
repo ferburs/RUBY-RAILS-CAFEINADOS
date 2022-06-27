@@ -5,25 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b7b6201-c3c6-42d1-8087-bf9616316f65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fer_m.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RUBY-RAILS-CAFEINADOS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/17fc1b5d-98e7-4b7f-a67a-f4246f411242.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/17fc1b5d-98e7-4b7f-a67a-f4246f411242.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/17fc1b5d-98e7-4b7f-a67a-f4246f411242.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b93d902-f5db-4f06-94e7-6042ab68ccbe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8fabce10-de88-4b06-8286-d4f446c3cd72.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/fer_m.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/peliculas_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/funcions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/funcions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/funcions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/tickets_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tickets_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/peliculas/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/_nav.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_nav.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/peliculas/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.editor.code.editing"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -209,6 +206,26 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
@@ -342,6 +359,7 @@
       <workItem from="1655220829266" duration="30527000" />
       <workItem from="1655417906910" duration="5921000" />
       <workItem from="1656271357009" duration="21302000" />
+      <workItem from="1656360782557" duration="2879000" />
     </task>
     <servers />
   </component>

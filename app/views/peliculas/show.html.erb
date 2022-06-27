@@ -22,7 +22,7 @@
       </div>
     </div>
   </div>
-</div>
+
 
 <div class="container mt-5">
   <div class="card">
@@ -36,12 +36,10 @@
 </div>
 
 
-
-
 <div class="container mt-4">
   <div class="card">
     <div class="btn-group" role="group" >
-      <h2 class = "padding" ><strong> Funciones  </strong> </h2>
+      <h2 class = "padding" ><strong> Funciones </strong> </h2>
       <% if user_signed_in? %>
         <% @user = current_user%>
         <% if @user.admin? %>
@@ -58,12 +56,7 @@
           <div class="card" style="width: 18rem;">
             <div class="card-body padding marg">
               <h5 class="card-title">
-                <script>
-                    date = new Date().toLocaleDateString();
-                    document.write(date);
-                </script>
                 <%= item.fecha%>
-
               </h5>
               <p class="card-text"><%= item.sala.nombre %></p>
               <%= button_to 'Seleccionar función', funcion_path(item), method: :get %>
@@ -74,61 +67,26 @@
       <% end %>
     </div>
   </div>
-  <br>
-  <br>
 </div>
 
-<div class="container mt-4">
-  <div class="card">
-    <div class="row">
-      <div class = "col-md-10">
-        <h2 class = "padding" ><strong>Funciones  </strong> </h2>
-        <%= form_with model: @function do |form| %>
-          <%= form.date_field :fechaingresada%>
-          <%= form.submit "Buscar Funciones"%>
-        <% end %>
-        <input id = "fechaingresada" type = "date" name = "fechaingresada" onInput="buscarentrada"/>
+
+
+  <div class = "container center-block">
+    <% if user_signed_in? %>
+      <% @user = current_user%>
+      <% if @user.admin? %>
         <br>
-        <ul class="col-sm-8 items-wrap">
-          <%  @pelicula.funcions.map do |item|%>
+        <div class="btn-group" role="group" >
 
-            <% if params[:fechaingresada] === params[:fechaingresada] %>
-              <%= params[:fechaingresada] %>
+          <%= link_to button_to "Editar", edit_pelicula_path(@pelicula) %>
+          &nbsp &nbsp
+          <%= link_to button_to "Volver a cartelera", peliculas_path %>
+          &nbsp &nbsp
+          <%= button_to "Borrar de cartelera", @pelicula, method: :delete %>
+          &nbsp &nbsp
+        </div>
 
-            <% end %>
-
-            </ul>
-          <% end %>
-          </div>
-
-    </div>
-  </div>
-
-</div>
-
-
-
-<div class="container mt-4">
-  <div class="card">
-    <div class="row">
-      <div>
-        <% if user_signed_in? %>
-          <% @user = current_user%>
-          <% if @user.admin? %>
-            <br>
-            <div class="btn-group" role="group" >
-
-              <%= link_to "Editar", edit_pelicula_path(@pelicula) %>
-              &nbsp &nbsp
-              <%= link_to "Volver a cartelera", peliculas_path %>
-              &nbsp &nbsp
-              <%= button_to "Borrar de cartelera", @pelicula, method: :delete, class: "btn btn-danger " %>
-              &nbsp &nbsp
-            </div>
-
-          <% end %>
-        <% end %>
-      </div>
-    </div>
+      <% end %>
+    <% end %>
   </div>
 </div>

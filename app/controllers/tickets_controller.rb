@@ -17,7 +17,7 @@ class TicketsController < InheritedResources::Base
       end
       redirect_to(@ticket,
                   :notice => 'La compra ha sido realizada con éxito.')
-      else redirect_to(funcion,:alert => "La cantidad de entradas seleccionada no está disponiible")
+      else redirect_to(funcion,:alert => "La cantidad de entradas seleccionada no está disponible")
       end
 
     end

@@ -1,6 +1,6 @@
 <!--<p style="color: green"><%#= notice %></p>-->
 
-
+<div class="container">
 <div id="carouselExampleControls" class="carousel slide padding" data-bs-ride="true">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -25,22 +25,27 @@
 </div>
 
 
-<div class="container">
-  <h2 class = "padding" >Cartelera</h2>
-  <div class="row d-flex">
+  <div class="btn-group" role="group" >
+    <h2 class = "padding" >CARTELERA</h2>
+    <% if user_signed_in? %>
+      <% @user = current_user%>
+      <% if @user.admin? %>
+        <h4 class = " marg" >
+          <%= link_to "Agregar Pelicula a la cartelera", new_pelicula_path %>
+        </h4>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="row row-cols-6">
     <% @peliculas.each do |pelicula| %>
-      <div class="margin-top col col-md-2 card marg">
+      <div class="col padding marg">
         <figure>
-          <%=image_tag(url_for(pelicula.imagen))%>
-        </figure>
-        <div class="card-body">
-          <h5 class="card-title"><%=pelicula.titulo%></h5>
+          <%= link_to image_tag(url_for(pelicula.imagen)), pelicula, title: pelicula.titulo %>
           <figcaption>
-            <span> <%= link_to "Comprar Entrada", pelicula %> </span>
+            <span> <%= link_to pelicula.titulo, pelicula %> </span>
           </figcaption>
-        </div>
+        </figure>
       </div>
-
     <% end %>
   </div>
 </div>

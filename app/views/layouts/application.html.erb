@@ -18,9 +18,9 @@
     <%if notice%>
       <p class = "alert alert-primary"><%= notice %></p>
     <%end%>
-    <%# if alert %>
-<!--      <p class = "alert alert-danger"><%#=alert %></p>-->
-    <%#end%>
+    <% if alert %>
+     <p class = "alert alert-danger"><%= alert %></p>
+    <%end%>
 
     <header>
       <div class="container bg-white">
@@ -31,7 +31,7 @@
           <div class="col col-6">
             <h1>CAFEINADOS</h1>
           </div>
-          <div class="col col-lg-5 align-self-end">
+          <div class="col col-lg-5 ">
             <%= render "partials/nav" %>
           </div>
         </div>
