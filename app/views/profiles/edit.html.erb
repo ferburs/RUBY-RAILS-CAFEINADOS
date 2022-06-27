@@ -1,32 +1,33 @@
 <%= form_with model: @profile do |f| %>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <%= f.label :name %>
-      <%= f.text_field :name, class: "form-control" %>
-    </div>
-    <div class="form-group col-md-6">
-      <%= f.label :last_name %>
-      <%= f.text_field :last_name, class: "form-control" %>
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="form-group col justify-content-center align-items-center">
+        <%= image_tag avatar_url(current_user) %>
+      </div>
+      <div class ="form-group col">
+        <%= f.label :Nombre  %>
+        <%= f.text_field :name, class: "form-control" %>
+        <br>
+        <%= f.label :Apellido %>
+        <%= f.text_field :last_name, class: "form-control" %>
+        <br>
+        <%= f.label :Direccion %>
+        <%= f.text_field :address, class: "form-control" %>
+        <br>
+        <%= f.label :Pais %>
+        <%= f.text_field :country, class: "form-control" %>
+        <br>
+        <%= f.label :Ciudad %>
+        <%= f.text_field :city, class: "form-control" %>
+        <br>
+        <%= f.label :CodigoPostal %>
+        <%= f.text_field :zip, class: "form-control" %>
+      </div>
     </div>
   </div>
-  <div class="form-group">
-    <%= f.label :address %>
-    <%= f.text_field :address, class: "form-control" %>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <%= f.label :country %>
-      <%= f.text_field :country, class: "form-control" %>
-    </div>
-    <div class="form-group col-md-4">
-      <%= f.label :city %>
-      <%= f.text_field :city, class: "form-control" %>
-    </div>
-    <div class="form-group col-md-2">
-      <%= f.label :zip %>
-      <%= f.text_field :zip, class: "form-control" %>
-    </div>
-    <div class="form-group col-md-2">
+  <br><br>
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-4 justify-content-center">
       <%= f.submit "Update", class: "btn btn-warning form-control" %>
     </div>
   </div>
