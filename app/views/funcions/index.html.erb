@@ -5,6 +5,7 @@
 <div class = "container left bg-white">
 
   <div class="row row-cols-1 row-cols-md-5 g-4">
+    <% @funcions = @funcions.sort_by { |e| e[:pelicula_id] } %>
     <% @funcions.each do |funcion| %>
         <div class="col">
           <div class="card" style="max-width: 15rem">

@@ -1,3 +1,4 @@
+
 <%= form_with(model: funcion) do |form| %>
   <% if funcion.errors.any? %>
     <div style="color: red">
@@ -12,13 +13,16 @@
   <% end %>
 
   <div>
-    <%= form.label :pelicula_id,style: "display: block" %>
-    <%= form.text_field :pelicula_id %>
+    <% @peliculas = Pelicula.all%>
+    <%= form.label :pelicula_id, style: "display: block" %>
+    <%= form.select :pelicula_id, @peliculas.collect { |pelicula| [pelicula.titulo, pelicula.id] } %>
+
   </div>
 
   <div>
+    <% @salas = Sala.all %>
     <%= form.label :sala_id, style: "display: block" %>
-    <%= form.text_field :sala_id %>
+    <%= form.select :sala_id, @salas.collect { |sala| [sala.nombre, sala.id] } %>
   </div>
 
   <div>
@@ -28,10 +32,11 @@
 
   <div>
     <%= form.label :precio, style: "display: block" %>
-    <%= form.number_field :precio %>
+    <%= form.number_field :precio , value:1,min:1,step:1%>
   </div>
 
   <div>
+    <br>
     <%= form.submit %>
   </div>
 <% end %>
