@@ -1,4 +1,4 @@
-<p style="color: green"><%= notice %></p>
+<!--<p style="color: green"><%#= notice %></p>-->
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
   <div class="carousel-indicators">
@@ -10,7 +10,7 @@
       <img src="https://tpc.googlesyndication.com/simgad/9395713232106059526" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://tpc.googleyndication.com/simgad/4596905262824578079" class="d-block w-100" alt="...">
+      <img src="https://tpc.googlesyndication.com/simgad/9395713232106059526" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -24,19 +24,22 @@
 </div>
 
 
-
-<div class="container left bg-white">
+<div class="container">
   <h2 class = "padding" >Cartelera</h2>
-  <div class="row row-cols-6">
+  <div class="row d-flex">
     <% @peliculas.each do |pelicula| %>
-      <div class="col padding marg">
+      <div class="margin-top col col-md-2 card marg">
         <figure>
-          <%= link_to image_tag(url_for(pelicula.imagen)), pelicula, title: pelicula.titulo %>
-          <figcaption>
-            <span> <%= link_to pelicula.titulo, pelicula %> </span>
-          </figcaption>
+          <%=image_tag(url_for(pelicula.imagen))%>
         </figure>
-    </div>
+        <div class="card-body">
+          <h5 class="card-title"><%=pelicula.titulo%></h5>
+          <figcaption>
+            <span> <%= link_to "Comprar Entrada", pelicula %> </span>
+          </figcaption>
+        </div>
+      </div>
+
     <% end %>
   </div>
 </div>
@@ -45,6 +48,11 @@
 <% if user_signed_in? %>
   <% @user = current_user%>
   <% if @user.admin? %>
-    <%= link_to "New pelicula", new_pelicula_path %>
+    <div>
+      <br>
+      <h1>Panel de Administrador</h1>
+      <%= button_to link_to "Agregar pelicula", new_pelicula_path %>
+    </div>
+
   <% end %>
 <% end %>

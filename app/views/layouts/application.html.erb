@@ -6,7 +6,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application",media: 'all', "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application.css",media: 'all', "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
@@ -14,22 +14,25 @@
     <%if notice%>
       <p class = "alert alert-primary"><%= notice %></p>
     <%end%>
-    <% if alert %>
-      <p class = "alert alert-danger"><%=alert %></p>
-    <%end%>
+    <%# if alert %>
+<!--      <p class = "alert alert-danger"><%#=alert %></p>-->
+    <%#end%>
 
 
     <header>
-    <%= link_to root_path,:class=>"name" do%>
-        <div class="logo padding">
-          <%= image_tag "cineonrails.jpg"%>
-
-          <div>CAFEINADOS</div>
-        </div> 
-    <%end%>
-
-    <%= render "partials/nav" %>
-    
+      <div class="container bg-white">
+        <div class="row align-items-center">
+          <div class="col col-lg-1">
+            <%= image_tag "taza.png", :size => "80x80"%>
+          </div>
+          <div class="col col-6">
+            <h1>CAFEINADOS</h1>
+          </div>
+          <div class="col col-lg-5 align-self-end">
+            <%= render "partials/nav" %>
+          </div>
+        </div>
+      </div>
     </header>
 
 
