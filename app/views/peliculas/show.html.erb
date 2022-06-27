@@ -70,7 +70,6 @@
 </div>
 
 
-
   <div class = "container center-block">
     <% if user_signed_in? %>
       <% @user = current_user%>
@@ -83,6 +82,7 @@
           <%= link_to button_to "Volver a cartelera", peliculas_path %>
           &nbsp &nbsp
           <%= button_to "Borrar de cartelera", @pelicula, method: :delete %>
+          <br>
           &nbsp &nbsp
         </div>
 

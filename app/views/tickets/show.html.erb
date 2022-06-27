@@ -1,10 +1,43 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @ticket %>
+<p style="color: green"><%= notice %></p>
+
 
 <div>
-  <%= link_to "Edit this ticket", edit_ticket_path(@ticket) %> |
-  <%= link_to "Back to tickets", tickets_path %>
+  <% if user_signed_in? %>
+    <% @user = current_user%>
+    <div class="container mt-5">
+      <h1> Gracias por su compra!</h1>
+      <br>
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 ">
+            <figure class = "padding">
+              <%=  image_tag(url_for(@ticket.funcion.pelicula.imagen))  %>
+            </figure>
+          </div>
+          <div class="col-md-8">
 
-  <%= button_to "Destroy this ticket", @ticket, method: :delete %>
+            <h2 class="card-title mt-3"><%= @ticket.funcion.pelicula.titulo%></h2>
+
+            <h6> <span> Sala: <%= @ticket.funcion.sala.nombre%> </span> </h6>
+            <h6> <span> Precio: <%= @ticket.funcion.precio%> </span> </h6>
+            <h6> <span> Fecha: <%= @ticket.funcion.fecha%></span> </h6>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
 </div>
+<br>
+
+<!--
+<div>
+  <%#= link_to "Edit this ticket", edit_ticket_path(@ticket) %> |
+  <%#= link_to "Back to tickets", tickets_path %>
+
+  <%#= button_to "Destroy this ticket", @ticket, method: :delete %>
+</div>-->
