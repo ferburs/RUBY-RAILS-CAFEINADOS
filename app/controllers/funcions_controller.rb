@@ -8,6 +8,7 @@ class FuncionsController < ApplicationController
 
   # GET /funcions/1 or /funcions/1.json
   def show
+    @ticket = Ticket.new
   end
 
   # GET /funcions/new
