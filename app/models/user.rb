@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :entradas
+  has_many :tickets
   has_one :profile, dependent: :destroy
 
   after_create :set_profile
