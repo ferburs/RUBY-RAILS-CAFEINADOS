@@ -32,3 +32,30 @@
     </div>
   </div>
 <% end %>
+
+<br><div class="container">
+  <div class="btn-group" role="group" >
+    <h2 class = "padding" >Historial de compras</h2>
+    <% if user_signed_in? %>
+      <% @user = current_user%>
+    <% end %>
+  </div>
+  <div class="row row-cols-6">
+    <% tickets = @profile.user.tickets %>
+      <% tickets.each do |ticket| %>
+      <div class="col padding marg card">
+        <figure>
+          <%= image_tag(url_for(ticket.funcion.pelicula.imagen))%>
+          <div class="card-body">
+            <span>Titulo: <%= ticket.funcion.pelicula.titulo %> </span><br>
+            <span>Precio: $ <%= ticket.funcion.precio %> </span><br>
+            <span>Sala: <%= ticket.funcion.sala.nombre %> </span><br>
+            <span>Fecha: <%= ticket.funcion.fecha %> </span>
+          </div>
+        </figure>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+</div>
