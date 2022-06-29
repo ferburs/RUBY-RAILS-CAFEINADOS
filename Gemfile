@@ -15,7 +15,9 @@ gem "sqlite3", "~> 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
-gem "bootstrap", "~> 5.1.3"
+#gem "bootstrap", "~> 5.1.3"
+
+gem 'sass-rails'
 
 gem 'simple_form'
 
