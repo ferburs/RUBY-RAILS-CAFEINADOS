@@ -45,7 +45,9 @@
       <% tickets.each do |ticket| %>
       <div class="col padding marg card">
         <figure>
-          <%= image_tag(url_for(ticket.funcion.pelicula.imagen))%>
+          <img src= "<%= url_for(ticket.funcion.pelicula.imagen) %>"
+                width="165" height="228">
+          <%#= image_tag(url_for(ticket.funcion.pelicula.imagen))%>
           <div class="card-body">
             <span>Titulo: <%= ticket.funcion.pelicula.titulo %> </span><br>
             <span>Precio: $ <%= ticket.funcion.precio %> </span><br>

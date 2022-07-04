@@ -37,6 +37,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_27_140854) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "entradas", force: :cascade do |t|
+    t.integer "funcion_id", null: false
+    t.integer "usuario_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["funcion_id"], name: "index_entradas_on_funcion_id"
+    t.index ["usuario_id"], name: "index_entradas_on_usuario_id"
+  end
+
   create_table "funcions", force: :cascade do |t|
     t.integer "pelicula_id", null: false
     t.integer "sala_id", null: false
@@ -105,6 +114,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_27_140854) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "entradas", "funcions"
+  add_foreign_key "entradas", "usuarios"
   add_foreign_key "funcions", "peliculas"
   add_foreign_key "funcions", "salas"
   add_foreign_key "profiles", "users"

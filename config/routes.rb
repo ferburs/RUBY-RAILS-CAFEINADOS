@@ -15,9 +15,13 @@ Rails.application.routes.draw do
   resources :peliculas
   resources :profiles, only: [:show, :edit, :update]
 
-
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+=begin
+  get"/peliculas",to:"peliculas#index"
+  get"/peliculas/new",to:"peliculas#new
+  get"/peliculas/:id",to:"peliculas#show"
+  post"/peliculas",to:"peliculas#create
+  get"/peliculas/id/edit",to:"peliculas#update
+  put"/peliculas/:id",to:"peliculas#update
+  delete"/peliculas/id"to:"peliculas#destroy"
+=end
 end

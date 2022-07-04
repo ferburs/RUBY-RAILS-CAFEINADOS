@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b7b6201-c3c6-42d1-8087-bf9616316f65" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/funcions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/funcions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/funcions/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/peliculas/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tickets/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tickets/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +30,13 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -309,6 +326,9 @@
       <workItem from="1656443627832" duration="6295000" />
       <workItem from="1656536077760" duration="1597000" />
       <workItem from="1656788798963" duration="1105000" />
+      <workItem from="1656791292940" duration="2936000" />
+      <workItem from="1656818228194" duration="5924000" />
+      <workItem from="1656872587363" duration="14535000" />
     </task>
     <servers />
   </component>
@@ -337,5 +357,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RUBY_RAILS_CAFEINADOS@Development__RUBY_RAILS_CAFEINADOS.rcov" NAME="Development: RUBY-RAILS-CAFEINADOS Coverage Results" MODIFIED="1656888091904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="RUBY-RAILS-CAFEINADOS" />
   </component>
 </project>

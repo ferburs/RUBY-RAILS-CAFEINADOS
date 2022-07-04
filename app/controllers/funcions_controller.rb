@@ -1,5 +1,6 @@
 class FuncionsController < ApplicationController
   before_action :set_funcion, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!,only: [:show]
 
   # GET /funcions or /funcions.json
   def index

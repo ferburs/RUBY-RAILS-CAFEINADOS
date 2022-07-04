@@ -49,6 +49,17 @@ gem "tzinfo-data"
 
 gem "devise"
 
+=begin
+
+rails generate devise:install
+
+rails generate devise: User
+
+rails db:migrate
+
+bundle install
+=end
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
